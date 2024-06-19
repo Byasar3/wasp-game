@@ -1,0 +1,11 @@
+package waspGame
+
+class DroneWasp(health: Int = 60, hitpoint: Int = 12, totalTimesHit: Int , isAlive: Boolean) extends Wasp(health, hitpoint, totalTimesHit, isAlive) {
+  
+  override def gettingHit(wasp: Wasp): Wasp = {
+    val newTotalTimesHit = this.totalTimesHit + 1
+    val newHealth = this.health - wasp.hitpoint
+    val newIsAlive = newHealth > 0
+    new WorkerWasp(newHealth, this.hitpoint, newTotalTimesHit, newIsAlive)
+  }
+}
