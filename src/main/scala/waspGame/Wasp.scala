@@ -1,0 +1,5 @@
+package waspGame
+
+class Wasp {
+
+}
