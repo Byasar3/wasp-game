@@ -1,6 +1,6 @@
 package waspGame
 
-class DroneWasp(health: Int = 60, hitpoint: Int = 12, totalTimesHit: Int , isAlive: Boolean) extends Wasp(health, hitpoint, totalTimesHit, isAlive) {
+class DroneWasp(health: Int = 60, hitpoint: Int = 12, totalTimesHit: Int = 0, isAlive: Boolean = true) extends Wasp(health, hitpoint, totalTimesHit, isAlive) {
   
   override def gettingHit(wasp: Wasp): Wasp = {
     val newTotalTimesHit = this.totalTimesHit + 1
