@@ -1,4 +1,4 @@
-package waspGame
+package waspGame.userInteraction
 
 import scala.io.StdIn
 

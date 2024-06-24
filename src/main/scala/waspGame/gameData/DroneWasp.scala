@@ -1,4 +1,6 @@
-package waspGame
+package waspGame.gameData
+
+import waspGame.gameData.Wasp
 
 class DroneWasp(health: Int = 60, hitpoint: Int = 12, totalTimesHit: Int = 0, isAlive: Boolean = true) extends Wasp(health, hitpoint, totalTimesHit, isAlive) {
   

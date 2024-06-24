@@ -1,4 +1,6 @@
-package waspGame
+package waspGame.userInteraction
+
+import waspGame.gameData.Wasp
 
 class Printer  {
 

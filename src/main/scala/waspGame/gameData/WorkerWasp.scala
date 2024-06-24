@@ -1,4 +1,6 @@
-package waspGame
+package waspGame.gameData
+
+import waspGame.gameData.Wasp
 
 class WorkerWasp(health: Int = 68, hitpoint: Int = 10, totalTimesHit: Int = 0, isAlive: Boolean = true) extends Wasp(health, hitpoint, totalTimesHit, isAlive) {
 

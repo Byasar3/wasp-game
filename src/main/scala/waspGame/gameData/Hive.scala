@@ -1,4 +1,6 @@
-package waspGame
+package waspGame.gameData
+
+import waspGame.gameData.{DroneWasp, Wasp}
 
 class Hive {
 

@@ -1,4 +1,6 @@
-package waspGame
+package waspGame.gameData
+
+import waspGame.gameData.Wasp
 
 class QueenWasp(health: Int = 90, hitpoint: Int = 7, totalTimesHit: Int = 0, isAlive: Boolean = true) extends Wasp(health, hitpoint, totalTimesHit, isAlive) {
 

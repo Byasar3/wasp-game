@@ -1,4 +1,7 @@
-package waspGame
+package waspGame.gameLogic
+
+import waspGame.gameData.Hive
+import waspGame.userInteraction.{Printer, Reader}
 
 import scala.util.Random
 
@@ -29,7 +32,7 @@ class Gameplay {
             hive.updateWasp(indexOfTargetInHive, target.gettingHit(damage))
 
 
-            if (hive.isQueenDead()) {
+            if (hive.isQueenDead) {
               printer.printMessage("The Queen Wasp is dead! All wasps are dead.")
               continuePlaying = false
             } else if (hive.areAllWaspsDead()) {
